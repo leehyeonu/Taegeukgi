@@ -30,7 +30,7 @@
             background-color: #ffebeb;
             transition: background-color 0.3s ease;
         }
-        
+
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
@@ -383,8 +383,8 @@
             <h3>글 작성은 "Chat GPT의 도움을 받아 작성하였습니다.</h3>
         </div>
     </div>
-    
-    
+
+
 
     <div id="modal" class="modal">
         <div class="modal-content">
@@ -393,53 +393,53 @@
             <p id="modal-description">내용</p>
         </div>
     </div>
-    
+
 </body>
 
 <footer>
     <p>&copy; 2024 광복절 기념 페이지</p>
 </footer>
 
-   <script>
-        function showInfo(element) {
-            console.log("showInfo 호출됨. 요소:", element);
-            let title = "";
-            let description = "";
+<script>
+    function showInfo(element) {
+        console.log("showInfo 호출됨. 요소:", element);
+        let title = "";
+        let description = "";
 
-            switch (element) {
-                case 'taegeuk':
-                    title = "태극";
-                    description = "태극은 태극기의 중심에 위치하며, 음과 양의 조화를 상징합니다. 빨간색과 파란색이 서로 맞물려 있으며, 무한한 우주의 원리를 나타냅니다.";
-                    break;
-                case 'sky':
-                    title = "건(乾)";
-                    description = "건(乾)은 하늘을 나타내며, 창조와 강함을 상징합니다. 하늘의 기운이 강하고 남성적인 성질을 지닙니다.";
-                    break;
-                case 'water':
-                    title = "감(坎)";
-                    description = "감(坎)은 물을 나타내며, 지혜와 위험을 상징합니다. 물의 흐름과 깊이를 나타내며, 여성적인 성질을 지닙니다.";
-                    break;
-                case 'fire':
-                    title = "이(離)";
-                    description = "이(離)는 불을 나타내며, 빛과 열정을 상징합니다. 불의 에너지는 변화와 진화를 의미합니다.";
-                    break;
-                case 'earth':
-                    title = "곤(坤)";
-                    description = "곤(坤)은 땅을 나타내며, 수용과 부드러움을 상징합니다. 대지의 넓고 안정적인 특성을 지니고 있습니다.";
-                    break;
-            }
-
-            document.getElementById('modal-title').innerText = title;
-            document.getElementById('modal-description').innerText = description;
-            document.getElementById('modal').style.display = 'block';
-
-            console.log("모달 내용 업데이트됨. 제목:", title, "설명:", description);
+        switch (element) {
+            case 'taegeuk':
+                title = "태극";
+                description = "태극은 태극기의 중심에 위치하며, 음과 양의 조화를 상징합니다. 빨간색과 파란색이 서로 맞물려 있으며, 무한한 우주의 원리를 나타냅니다.";
+                break;
+            case 'sky':
+                title = "건(乾)";
+                description = "건(乾)은 하늘을 나타내며, 창조와 강함을 상징합니다. 하늘의 기운이 강하고 남성적인 성질을 지닙니다.";
+                break;
+            case 'water':
+                title = "감(坎)";
+                description = "감(坎)은 물을 나타내며, 지혜와 위험을 상징합니다. 물의 흐름과 깊이를 나타내며, 여성적인 성질을 지닙니다.";
+                break;
+            case 'fire':
+                title = "이(離)";
+                description = "이(離)는 불을 나타내며, 빛과 열정을 상징합니다. 불의 에너지는 변화와 진화를 의미합니다.";
+                break;
+            case 'earth':
+                title = "곤(坤)";
+                description = "곤(坤)은 땅을 나타내며, 수용과 부드러움을 상징합니다. 대지의 넓고 안정적인 특성을 지니고 있습니다.";
+                break;
         }
 
-        function closeModal() {
-            console.log("closeModal 호출됨.");
-            document.getElementById('modal').style.display = 'none';
-        }
-    </script>
+        document.getElementById('modal-title').innerText = title;
+        document.getElementById('modal-description').innerText = description;
+        document.getElementById('modal').style.display = 'block';
+
+        console.log("모달 내용 업데이트됨. 제목:", title, "설명:", description);
+    }
+
+    function closeModal() {
+        console.log("closeModal 호출됨.");
+        document.getElementById('modal').style.display = 'none';
+    }
+</script>
 
 </html>
